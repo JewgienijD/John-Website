@@ -13,4 +13,62 @@
 @font-face {
   font-family: "Heebo-Regular";
   src: url(fonts/Heebo-Regular.ttf);
+}
+.header .header__content_container {
+  max-width: 1052px;
+  padding: 0px 10px;
+}
+.header .menu__body .menu__list {
+  display: flex;
+  justify-content: flex-end;
+  height: 82px;
+  align-items: center;
+}
+.header .menu__body .menu__list li {
+  list-style: none;
+  margin: 0 0 0 33px;
+}
+.header .menu__body .menu__list li .menu__link {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  color: #000;
+  font-family: "Heebo-Regular";
+  text-decoration: none;
+}
+@media (min-width: 991.98px) {
+  .header .menu__body .menu__list li .menu__link:hover {
+    color: #FF6464;
+  }
+}
+
+.icon-menu {
+  display: none;
+}
+@media (max-width: 757.98px) {
+  .icon-menu {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .icon-menu span {
+    transition: all 0.3s ease 0s;
+    top: calc(50% - 1px);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  .icon-menu span:first-child {
+    top: 0px;
+  }
+  .icon-menu span:last-child {
+    top: auto;
+    bottom: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
