@@ -40,6 +40,7 @@
     left: 0;
     overflow: auto;
     padding: 60px 10px 30px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
   }
   .header .menu__body._active {
     transform: translate(0px, 0%);
@@ -93,7 +94,7 @@
     z-index: 5;
   }
   .icon-menu span {
-    transition: all 0.3s ease 0s;
+    transition: all 0.8s ease 0s;
     top: calc(50% - 1px);
     position: absolute;
     width: 100%;
@@ -107,4 +108,14 @@
     top: auto;
     bottom: 0px;
   }
+}
+.icon-menu._active span {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+.icon-menu._active span:first-child {
+  transform: rotate(45deg);
+}
+.icon-menu._active span:last-child {
+  height: 0;
 }/*# sourceMappingURL=style.css.map */

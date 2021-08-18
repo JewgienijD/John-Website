@@ -60,6 +60,7 @@ $md4: 479.98;
             left: 0;
             overflow: auto;
             padding: 60px 10px 30px 10px;
+            background-color: rgb(255, 255, 255, 0.8);
             &._active {
                 transform: translate(0px, 0%);
             }
@@ -110,7 +111,7 @@ $md4: 479.98;
         cursor: pointer;
         z-index: 5;
         span {
-            transition: all 0.3s ease 0s;
+            transition: all 0.8s ease 0s;
             top: calc(50% - 1px);
             position: absolute;
             width: 100%;
@@ -122,6 +123,18 @@ $md4: 479.98;
             &:last-child {
                 top: auto;
                 bottom: 0px;
+            }
+        }
+    }
+    &._active {
+        span {
+            transform: rotate(-45deg);
+            top: 0px;
+            &:first-child {
+                transform: rotate(45deg);
+            }
+            &:last-child {
+                height: 0;
             }
         }
     }
