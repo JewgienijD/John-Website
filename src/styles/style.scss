@@ -34,21 +34,37 @@ $md4: 479.98;
 
 body {
     color: #21243D;
+    margin: 0;
+    padding: 0;
+    font-family: $fontRegular;
 }
 
 //bounding container
 ._container {
-    margin: 0 60px 0 145px;
+    margin: 0 145px 0 145px;
     @media(max-width: $maxWidth+px){
         max-width: $md1+px;
+    }
+    @media(max-width: $md3+px){
+        max-width: $md3+px;
+        margin: 0 0 0 0;
+    }
+    @media(max-width: $md4+px){
+        max-width: $md4+px;
     }
 }
 
 //MENU
 .header {
+    position: relative;
+    z-index: 100;
     .header__content {
-        max-width: 1052px;
-        padding: 0px 10px;
+        margin: 0 60px 0 145px;
+        max-width: 1152px;
+        @media (max-width: $md3+px) {
+            margin-right: 18px;
+        }
+        //padding: 0px 10px;
     }
 
     .header__menu {
@@ -72,7 +88,7 @@ body {
             left: 0;
             overflow: auto;
             padding: 60px 10px 30px 10px;
-            background-color: rgb(255, 255, 255, 0.8);
+            background-color: rgb(255, 255, 255, 0.90);
             &._active {
                 transform: translate(0px, 0%);
             }
@@ -112,7 +128,7 @@ body {
     }
 }
 
-//BURGER MENU
+//BURGER ICON
 .icon-menu {
     display: none;
     @media(max-width:$md3+px) {
@@ -158,6 +174,7 @@ body {
         padding: 33px 0 71px 0;
     }
 }
+
 //HEllO SECTION
 .hello {
     padding: 38px 0 71px 0;
@@ -169,7 +186,6 @@ body {
     }
 }
 .hello__container {
-    max-width: $md1+px;
     display: flex;
     @media(max-width: $md3+px) {
         flex-direction: column-reverse;
@@ -201,11 +217,13 @@ body {
             top: 228px;
             @media(max-width: $md3+px) {
                 font-size: 32px;
+                width: auto;
             }            
         }
         .hello__text {
             margin: 0 0 30px 0;
             @media(max-width: $md3+px) {
+                padding: 0 15px 0 15px;
                 margin: 0 0 25px 0;
             }
         }
@@ -247,9 +265,96 @@ body {
             height: 100%;
         }
         @media(max-width: $md3+px) {
+            max-width: 170px;
             max-height: 170px;
-            width: 170px;
-            height: 170px;
+            margin: auto;
+        }
+    }
+}
+
+//RECENT POSTS SECTION
+.recent-posts {
+    background-color: #EDF7FA;
+    padding: 25px 0 30px 0;
+    @media(max-width:$md3+px) {
+        padding: 25px 0 23px 0;
+    }
+    &__container {
+        .recent-posts__header {
+            display: flex;
+            justify-content: space-between;
+            font-family: $fontRegular;
+            font-style: normal;
+            .recent-posts__title {
+                padding: 0 20px 0 0;
+                margin: 0 0 20px 0;
+                font-size: 22px;
+                color: #21243D;
+                @media(max-width: $md3+px) {
+                    margin: auto auto 20px auto;
+                    font-size: 18px;
+                }
+            }
+            .recent-posts__view-all {
+                font-size: 16px;
+                color: #00A8CC;
+                line-height: 23px;
+                text-align: right;
+                flex-wrap: nowrap;
+                @media(max-width: $md3+px) {
+                    display: none;
+                }
+            }
+        }
+        .recent-posts__items {
+            margin: 0px -10px;
+            @media(min-width:$md3+px){
+                display: flex;
+            }
+            .recent-posts__column {
+                flex: 0 1 50%;
+                padding: 0 10px;
+                margin: 0 0 17px 0;
+                @media(max-width:$md3+px) {
+                    margin: 0 10px 17px 10px;
+                }
+            }
+            .recent-post {
+                background-color: #fff;
+                box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+                border-radius: 4px;
+                padding: 23px;
+                &__title {
+                    display: inline-block;
+                    margin: 0 0 17px 0;
+                    color: inherit;
+                    font-size: 26px;
+                    line-height: 38px;
+                    font-weight: 700;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                    @media(min-width: $md2+px) {
+                        &:hover {
+                            color: #FF6464;
+                        }
+                    }
+                    @media(max-width: $md3+px) {
+                        font-size: 22px;
+                        margin: 0 0 5px 0;
+                    }
+                }
+                &__info {
+                    margin: 0 0 15px 0;
+                    font-size: 18px;
+                    line-height: 26px;
+                    span {
+                        margin: 0 10px;
+                    }
+                    @media(max-width: $md3+px) {
+                        font-size: 16px;
+                    }
+                }
+            }
         }
     }
 }
