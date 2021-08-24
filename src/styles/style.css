@@ -445,10 +445,17 @@ body {
   font-size: 30px;
   line-height: 44px;
   font-weight: 700;
+  text-decoration: none;
+  color: #21243D;
 }
 @media (max-width: 757.98px) {
   .works__item .works__body .works__title {
     font-size: 24px;
+  }
+}
+@media (min-width: 991.98px) {
+  .works__item .works__body .works__title:hover {
+    color: #FF6464;
   }
 }
 .works__item .works__body .works__info {
@@ -571,5 +578,21 @@ body {
 @media (max-width: 757.98px) {
   .blog__category {
     font-size: 16px;
+  }
+}
+
+/*================ WORK PAGE =================*/
+.works__main-title {
+  margin: 0 0 45px 0;
+}
+@media (max-width: 757.98px) {
+  .works__main-title {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 757.98px) {
+  .work {
+    padding: 0 20px 0 20px;
   }
 }/*# sourceMappingURL=style.css.map */

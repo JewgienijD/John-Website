@@ -423,8 +423,15 @@ body {
                 font-size: 30px;
                 line-height: 44px;
                 font-weight: 700;
+                text-decoration: none;
+                color:  #21243D;
                 @media(max-width:$md3+px)  {
                     font-size: 24px;
+                }
+                @media(min-width: $md2+px){   
+                    &:hover {
+                        color: #FF6464;
+                    }
                 }
             }
             .works__info {
@@ -539,5 +546,20 @@ body {
         @media(max-width: $md3+px){
             font-size: 16px;
         }
+    }
+}
+
+/*================ WORK PAGE =================*/
+.works {
+    &__main-title {
+        margin: 0 0 45px 0;
+        @media(max-width:$md3+px) {
+            margin: 0 0 20px 0;
+        }
+    }
+}
+.work {
+    @media(max-width: $md3+px){
+        padding: 0 20px 0 20px;
     }
 }
