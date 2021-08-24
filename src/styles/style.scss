@@ -42,7 +42,7 @@ body {
 //bounding container
 ._container {
     margin: 0 145px 0 145px;
-    @media(max-width: $maxWidth+px){
+    @media(max-width: $maxWidth){
         max-width: $md1+px;
     }
     @media(max-width: $md2+px) {
@@ -178,6 +178,8 @@ body {
         padding: 33px 0 71px 0;
     }
 }
+
+/*================== HOME PAGE ================*/
 
 //HEllO SECTION
 .hello {
@@ -460,6 +462,10 @@ body {
 .footer {
     text-align: center;
     padding: 50px 0;
+    margin-bottom: 0;
+    @media(max-width: $md3+px) {
+        padding: 30px 0;
+    }
     .social {
         display: flex;
         justify-content: center;
@@ -475,5 +481,63 @@ body {
     &__copy {
         font-size: 14px;
         color:#21243D;
+    }
+}
+
+/*================ BLOG PAGE =================*/
+.blog {
+    @media(max-width:$md3+px) {
+        margin: 0 20px 0 20px;
+    }
+    &__item {
+        &_title {
+            font-size: 30px;
+            font-weight: 500;
+            color:#21243D;
+            margin: 0 0 16px 0;
+            transition: color 0.3s ease 0s;
+            @media(max-width: $md3+px){
+                font-size: 26px;
+                margin: 0 0 5px 0;
+            }
+            @media(min-width: $md2+px){   
+                &:hover {
+                    color: #FF6464;
+                }
+            }
+        }
+        border-bottom: 1px solid #E0E0E0;
+        padding: 0 0 30px 0;
+        margin: 0 0 30px 0;
+    }
+    &__title {
+        margin: 0 0 50px 0;
+        font-weight: bold;
+        font-size: 44px;
+        @media(max-width: $md3+px){
+            font-size: 30px;
+            margin: 0 0 18px 0;
+        }
+    }
+    &__info {
+        display: flex;
+        margin: 0 0 10px 0;
+    }
+    &__separate {
+        margin: 0 20px;
+    }
+    &__date {
+        font-size: 20px;
+        color: #21243D;
+        @media(max-width: $md3+px){
+            font-size: 16px;
+        }
+    }
+    &__category {
+        font-size: 20px;
+        color:#8695A4;
+        @media(max-width: $md3+px){
+            font-size: 16px;
+        }
     }
 }
