@@ -375,4 +375,105 @@ body {
   .recent-posts__container .recent-posts__items .recent-post__info {
     font-size: 16px;
   }
+}
+
+.featured-works {
+  padding: 30px 0 80px 0;
+}
+.featured-works__title {
+  margin: 0 0 15px 0;
+  font-size: 22px;
+}
+@media (max-width: 757.98px) {
+  .featured-works__title {
+    margin: 0 0 15px 0;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+@media (max-width: 757.98px) {
+  .featured-works__items {
+    padding: 30px 0 30px 0;
+  }
+}
+
+@media (max-width: 757.98px) {
+  .works {
+    display: flex;
+    margin: 0 10px;
+    overflow: auto;
+  }
+}
+.works__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 0 0 30px 0;
+  margin: 0 0 30px 0;
+}
+@media (min-width: 757.98px) {
+  .works__item {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 757.98px) {
+  .works__item {
+    flex: 0 0 85%;
+    margin: 0 15px 0 0;
+  }
+}
+.works__item .works__image {
+  flex: 0 0 246px;
+  border-radius: 6px;
+  min-height: 180px;
+  overflow: hidden;
+}
+@media (max-width: 757.98px) {
+  .works__item .works__image img {
+    margin: auto auto 17px auto;
+    width: 100%;
+    max-height: 250px;
+  }
+}
+.works__item .works__body {
+  flex: 1 1 auto;
+  padding: 0 0 0 18px;
+}
+.works__item .works__body .works__title {
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 700;
+}
+@media (max-width: 757.98px) {
+  .works__item .works__body .works__title {
+    font-size: 24px;
+  }
+}
+.works__item .works__body .works__info {
+  display: inline-flex;
+  align-items: center;
+}
+@media (max-width: 757.98px) {
+  .works__item .works__body .works__info {
+    font-size: 16px;
+  }
+}
+.works__item .works__body .works__info .works__year {
+  background: #142850;
+  height: 25px;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  display: inline-block;
+  margin: 0 0 15px 0;
+}
+.works__item .works__body .works__info .works__category {
+  font-weight: normal;
+  font-size: 20px;
+  color: #8695A4;
+  display: inline-block;
+  margin: 0 0 15px 20px;
 }/*# sourceMappingURL=style.css.map */
