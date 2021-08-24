@@ -24,7 +24,7 @@ body {
 ._container {
   margin: 0 145px 0 145px;
 }
-@media (max-width: 1152) {
+@media (min-width: 1152) {
   ._container {
     max-width: 868px;
   }
@@ -32,7 +32,6 @@ body {
 @media (max-width: 991.98px) {
   ._container {
     max-width: 991.98px;
-    margin: 0 30px 0 30px;
   }
 }
 @media (max-width: 757.98px) {
@@ -58,6 +57,11 @@ body {
 @media (max-width: 757.98px) {
   .header .header__content {
     margin-right: 18px;
+  }
+}
+@media (min-width: 1152) {
+  .header .header__content {
+    max-width: 868px;
   }
 }
 .header .header__menu {
@@ -216,15 +220,12 @@ body {
 @media (max-width: 757.98px) {
   .hello__container .hello__content .hello__title {
     margin: 0 0 20px 0;
+    padding-top: 30px;
   }
 }
 .hello__container .hello__content .title {
   font-family: "Heebo-Bold";
   font-size: 44px;
-  width: 506px;
-  height: 105px;
-  left: 148px;
-  top: 228px;
 }
 @media (max-width: 757.98px) {
   .hello__container .hello__content .title {
@@ -292,7 +293,7 @@ body {
 }
 @media (max-width: 757.98px) {
   .recent-posts {
-    padding: 25px 0 23px 0;
+    padding: 0 0 20px 0;
   }
 }
 .recent-posts__container .recent-posts__header {
@@ -309,8 +310,13 @@ body {
 }
 @media (max-width: 757.98px) {
   .recent-posts__container .recent-posts__header .recent-posts__title {
-    margin: auto auto 20px auto;
+    margin: 20px auto 20px auto;
     font-size: 18px;
+  }
+}
+@media (max-width: 991.98px) {
+  .recent-posts__container .recent-posts__header .recent-posts__title {
+    padding-top: 20px;
   }
 }
 .recent-posts__container .recent-posts__header .recent-posts__view-all {
