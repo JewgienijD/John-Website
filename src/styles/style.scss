@@ -60,18 +60,30 @@ body {
 
 //MENU
 .header {
+    margin: 0 60px 0 205px;
+    @media(min-width: $maxWidth){
+        max-width: $md1+px;
+    }
+    @media(max-width: $md2+px) {
+        max-width: $md2+px;
+        
+    }
+    @media(max-width: $md3+px){
+        max-width: $md3+px;
+        margin: 0 0 0 0;
+    }
+    @media(max-width: $md4+px){
+        max-width: $md4+px;
+    }
     position: relative;
     z-index: 100;
     .header__content {
-        margin: 0 60px 0 145px;
-        max-width: 1152px;
         @media (max-width: $md3+px) {
             margin-right: 18px;
         }
         @media(min-width: $maxWidth){
         max-width: $md1+px;
         }
-        //padding: 0px 10px;
     }
 
     .header__menu {
@@ -109,7 +121,7 @@ body {
                     font-style: normal;
                     font-weight: 500;
                     color: #000;
-                    font-family: $fontRegular; 
+                    font-family: $fontMedium; 
                     text-decoration: none;
                     @media(min-width: $md2+px){   
                         &:hover {
@@ -336,9 +348,11 @@ body {
                     display: inline-block;
                     margin: 0 0 17px 0;
                     color: inherit;
+                    font-family: $fontBold;
                     font-size: 26px;
                     line-height: 38px;
                     font-weight: 700;
+                    color: #21243D;
                     text-decoration: none;
                     transition: color 0.3s ease;
                     @media(min-width: $md2+px) {
@@ -425,6 +439,7 @@ body {
             flex: 1 1 auto;
             padding: 0 0 0 18px;
             .works__title {
+                font-family: $fontBold;
                 font-size: 30px;
                 line-height: 44px;
                 font-weight: 700;
@@ -503,6 +518,7 @@ body {
     }
     &__item {
         &_title {
+            font-family: $fontMedium;
             font-size: 30px;
             font-weight: 500;
             color:#21243D;
@@ -524,6 +540,7 @@ body {
     }
     &__title {
         margin: 0 0 50px 0;
+        font-family: $fontBold;
         font-weight: bold;
         font-size: 44px;
         @media(max-width: $md3+px){
@@ -558,8 +575,17 @@ body {
 .works {
     &__main-title {
         margin: 0 0 45px 0;
+        font-family: $fontBlack;
+        font-size: 44px;
+        color: #21243D;
         @media(max-width:$md3+px) {
+            font-size: 30px;
             margin: 0 0 20px 0;
+        }
+    }
+    &__title {
+        @media(max-width:$md3+px) {
+            font-size: 24px;
         }
     }
 }
