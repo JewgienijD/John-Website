@@ -18,7 +18,7 @@ body {
   color: #21243D;
   margin: 0;
   padding: 0;
-  font-family: "Heebo-Regular";
+  font-family: "Heebo-Regular", sans-serif;
 }
 
 ._container {
