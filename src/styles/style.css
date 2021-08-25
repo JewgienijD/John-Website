@@ -110,6 +110,11 @@ body {
     transform: translate(0px, 0%);
   }
 }
+@media (max-width: 757.98px) {
+  .header .menu__body .menu__list {
+    padding: 0;
+  }
+}
 .header .menu__body .menu__list li {
   list-style: none;
   margin: 0 0 0 33px;
@@ -132,6 +137,7 @@ body {
     font-size: 40px;
     display: block;
     text-align: center;
+    padding-top: 20px;
   }
 }
 .header .menu__body .menu__list li ._active {
@@ -178,7 +184,7 @@ body {
 }
 .icon-menu._active span {
   transform: rotate(-45deg);
-  top: 0px;
+  top: 15px;
 }
 .icon-menu._active span:first-child {
   transform: rotate(45deg);
