@@ -1,5 +1,6 @@
 # John-Website
 This website was created based on FIGMA design (see John.fig in the project folder).
+
 [LIVE DEMO](https://jewgienijd.github.io/John-Website/index.html)
 
 # Used technologies:
