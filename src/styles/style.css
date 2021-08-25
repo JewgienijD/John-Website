@@ -134,6 +134,9 @@ body {
     text-align: center;
   }
 }
+.header .menu__body .menu__list li ._active {
+  color: #FF6464;
+}
 @media (min-width: 757.98px) {
   .header .menu__body .menu__list {
     display: flex;

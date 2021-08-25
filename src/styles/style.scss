@@ -132,7 +132,10 @@ body {
                        font-size: 40px; 
                        display: block;
                        text-align: center; 
-                    }                   
+                    }
+                }
+                ._active {
+                    color: #FF6464; 
                 }
             }
             @media(min-width: $md3+px) {
