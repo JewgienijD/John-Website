@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Heebo-Black";
-  src: url(/src/fonts/Heebo-Black.ttf);
+  src: url("./fonts/Heebo-Black.ttf");
 }
 @font-face {
   font-family: "Heebo-Bold";
-  src: url(/src/fonts/Heebo-Bold.ttf);
+  src: url("./fonts/Heebo-Bold.ttf");
 }
 @font-face {
   font-family: "Heebo-Medium";
-  src: url(/src/fonts/Heebo-Medium.ttf);
+  src: url("./fonts/Heebo-Medium.ttf");
 }
 @font-face {
   font-family: "Heebo-Regular";
-  src: url(/src/fonts/Heebo-Regular.ttf);
+  src: url("./fonts/Heebo-Regular.ttf");
 }
 body {
   color: #21243D;
   margin: 0;
   padding: 0;
-  font-family: "Heebo-Regular", sans-serif;
+  font-family: "Heebo-Regular";
 }
 
 ._container {
@@ -251,7 +251,7 @@ body {
   }
 }
 .hello__container .hello__content .title {
-  font-family: "Heebo-Bold";
+  font-family: "Heebo-Bold", sans-serif;
   font-size: 44px;
 }
 @media (max-width: 757.98px) {
