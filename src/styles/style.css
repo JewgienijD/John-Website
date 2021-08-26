@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Heebo-Black";
-  src: url(/src/fonts/Heebo-Black.ttf);
+  src: url(./src/fonts/Heebo-Black.ttf);
 }
 @font-face {
   font-family: "Heebo-Bold";
-  src: url(/src/fonts/Heebo-Bold.ttf);
+  src: url(./src/fonts/Heebo-Bold.ttf);
 }
 @font-face {
   font-family: "Heebo-Medium";
-  src: url(/src/fonts/Heebo-Medium.ttf);
+  src: url(./src/fonts/Heebo-Medium.ttf);
 }
 @font-face {
   font-family: "Heebo-Regular";
-  src: url(/src/fonts/Heebo-Regular.ttf);
+  src: url(./src/fonts/Heebo-Regular.ttf);
 }
 body {
   color: #21243D;
@@ -124,7 +124,7 @@ body {
   font-style: normal;
   font-weight: 500;
   color: #000;
-  font-family: "Heebo-Medium", sans-serif;
+  font-family: "Heebo-Medium";
   text-decoration: none;
 }
 @media (min-width: 991.98px) {
